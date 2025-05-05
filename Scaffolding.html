@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Scaffolding Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .row {
+            margin-bottom: 20px;
+        }
+        [class^="col"] {
+            padding: 15px;
+            background-color: rgba(100, 100, 100, 0.05);
+            border: 1px solid rgba(100, 100, 100, 0.2);
+            text-align: center;
+        }
+        .offset-cell {
+            background: #343a40; /* dark gray */
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 100px;
+        }
+        .offset-row {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="index.html" class="btn btn-secondary mb-4">
+            Back to Home
+        </a>
+
+        <!-- Header Row -->
+        <div class="row">
+            <div class="col-12">
+                <h1>HEADER</h1>
+            </div>
+        </div>
+
+        <!-- First and Second Row -->
+        <div class="row">
+            <div class="col-md-4 offset-cell offset-row" style="grid-row: span 2;">
+                <div>1/3<br><small>offset</small></div>
+            </div>
+            <div class="col-md-4" style="background-color:#6f42c1; color:white;">1/3</div>
+            <div class="col-md-4" style="background-color:#20c997; color:white;">1/3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="background-color:#fd7e14; color:white;">1/3</div>
+            <div class="col-md-8" style="background-color:#0dcaf0; color:#212529;">2/3</div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="row">
+            <div class="col-md-3" style="background-color:#ffc107; color:#212529;">1/4</div>
+            <div class="col-md-6" style="background-color:#6610f2; color:white;">1/2</div>
+            <div class="col-md-3" style="background-color:#ffc107; color:#212529;">1/4</div>
+        </div>
+
+        <!-- Fourth Row -->
+        <div class="row">
+            <div class="col-md-3" style="background-color:#198754; color:white;">1/4</div>
+            <div class="col-md-3" style="background-color:#dc3545; color:white;">1/4</div>
+            <div class="col-md-3" style="background-color:#0dcaf0; color:#212529;">1/4</div>
+            <div class="col-md-3" style="background-color:#ffc107; color:#212529;">1/4</div>
+        </div>
+
+        <!-- Fifth Row -->
+        <div class="row">
+            <div class="col-md-3" style="background-color:#20c997; color:white;">1/4</div>
+            <div class="col-md-3" style="background-color:#d63384; color:white;">1/4</div>
+            <div class="col-md-3" style="background-color:#6f42c1; color:white;">1/4</div>
+            <div class="col-md-3" style="background-color:#198754; color:white;">1/4</div>
+        </div>
+
+        <!-- Sixth Row -->
+        <div class="row">
+            <div class="col-md-2" style="background-color:#0d6efd; color:white;">1/6</div>
+            <div class="col-md-7" style="background-color:#e83e8c; color:white;">7/12</div>
+            <div class="col-md-3" style="background-color:#fd7e14; color:white;">1/4</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
